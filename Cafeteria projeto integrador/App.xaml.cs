@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace WpfApp1
+namespace Cafeteria_projeto_integrador
 {
     /// <summary>
     /// Interaction logic for App.xaml

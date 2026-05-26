@@ -1,0 +1,40 @@
+﻿<Window x:Class="Cafeteria_projeto_integrador.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cafeteria_projeto_integrador"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFDB9C60">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+            <!-- MENU-->
+        <StackPanel Background="#FF6A452C">
+            
+            <TextBlock Text="Cafeteria"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="20"/>
+            <Button Content="Home" Height="40"
+                    Margin="10" Click="BtnHome_Click">
+            </Button>
+
+            <Button Content="Cadastro Produto" Height="40"
+                    Margin="10" Click="BtnCadastroProduto_Click" Width="200">
+                
+            </Button>
+                    
+                
+
+        </StackPanel>
+        <!--CONTEUDO-->
+        <Frame x:Name="MainFrame" Grid.Column="1"
+               NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
+            
+
+

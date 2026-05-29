@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,11 +22,31 @@ namespace Cafeteria_projeto_integrador
         public Login()
         {
             InitializeComponent();
+            string nome = txbUser.Text;
+            string senha = txbPassword.Password;
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void BtnLogar(object sender, RoutedEventArgs e)
         {
+            string sql = "SELECT Nome, Senha FROM Usuario WHERE Nome = @nome AND Senha= @senha";
 
+            MySqlCommand comando = new MySqlCommand(sql, ConectBd.Conexao);
+            comando.Parameters.AddWithValue("@nome", txbUser.Text);
+            comando.Parameters.AddWithValue("@senha", txbPassword.Password);
+
+            using (MySqlDataReader leitor = comando.ExecuteReader())
+            {
+                if (leitor.Read())
+                {
+                    string nome = leitor["nome"].ToString();
+                    MessageBox.Show($"Bem-vindo {nome}");
+                }
+                else
+                {
+                    MessageBox.Show("Usuário ou senha inválidos.");
+                }
+                leitor.Close();
+            }
         }
     }
 }

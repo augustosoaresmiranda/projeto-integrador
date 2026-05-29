@@ -8,17 +8,19 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Cadastro">
 
-    <Grid Background="#FF6F4E37">
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="250,88,0,0" VerticalAlignment="Top" Background="#FFFFFBFB">
+    <Canvas Background="#FF6F4E37">
+        <Image Margin="0,-43,0,-43" Source="/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" Stretch="Fill" HorizontalAlignment="Center" Opacity="0.2" Width="715"/>
+
+        <Label Content="Nome" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFFFFBFB" Canvas.Left="250" Canvas.Top="88">
             <Label.BorderBrush>
                 <ImageBrush/>
             </Label.BorderBrush>
         </Label>
-        <Label Content="Senha" HorizontalAlignment="Left" Margin="250,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.119,0.446" Background="White"/>
-        <TextBox x:Name="txbnome" HorizontalAlignment="Center" Margin="0,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txbnome_TextChanged"/>
-        <PasswordBox x:Name="txbsenha" HorizontalAlignment="Center" Margin="0,164,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="txbbuton" Content="Cadastrar" HorizontalAlignment="Center" Margin="0,277,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.135,0.589"/>
-        <Image Margin="0,-43,0,-43" Source="/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" Stretch="Fill" HorizontalAlignment="Center" Opacity="0.2" Width="715"/>
+        <Label Content="Senha" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.119,0.446" Background="White" Canvas.Left="250" Canvas.Top="168"/>
+        <TextBox x:Name="txbnome" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Canvas.Left="320" Canvas.Top="92" />
+        <PasswordBox x:Name="txbsenha" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Canvas.Left="320" Canvas.Top="168"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Center" Margin="0,277,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.135,0.589"/>
 
-    </Grid>
+
+    </Canvas>
 </Page>

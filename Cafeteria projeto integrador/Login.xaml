@@ -8,11 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Login">
 
-    <Grid Background="#FFDB9C60">
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="250,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.088,0.321"/>
-        <Label Content="Senha" HorizontalAlignment="Left" Margin="250,160,0,0" VerticalAlignment="Top"/>
+    <Grid Background="#FF6F4E37">
+        <Image Margin="0,-43,0,-43" Source="/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" Stretch="Fill" HorizontalAlignment="Center" Opacity="0.2"/>
+
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="250,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.088,0.321" Foreground="#FFF3F3F3"/>
+        <Label Content="Senha" HorizontalAlignment="Left" Margin="250,160,0,0" VerticalAlignment="Top" Foreground="White"/>
         <TextBox x:Name="txb1" HorizontalAlignment="Center" Margin="0,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <PasswordBox HorizontalAlignment="Center" Margin="0,164,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox HorizontalAlignment="Center" Margin="0,168,0,0" VerticalAlignment="Top" Width="120"/>
         <Button Content="Entrar" HorizontalAlignment="Center" Margin="0,277,0,0" VerticalAlignment="Top" Width="60"/>
 
     </Grid>

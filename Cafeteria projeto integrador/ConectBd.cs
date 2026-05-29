@@ -10,9 +10,9 @@ namespace Cafeteria_projeto_integrador
     {
         public string StrConex;
         MySqlConnection con = new MySqlConnection();
-        public ConectBd() 
+        public ConectBd()
         {
-            StrConex = "Server= localhost; Database= Cafeteria; Uid=root; Pwd=123456789;";
+            StrConex = "Server= localhost; Database= Cafeteria; Uid=root; Pwd=123456789";
         }
 
         public void Conectar() 

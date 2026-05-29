@@ -11,28 +11,29 @@
             <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-            <!-- MENU-->
+        <!-- MENU-->
         <StackPanel Background="#FF6A452C">
-            
-            <TextBlock Text="Cafeteria"
+
+            <TextBlock
                        Foreground="White"
                        FontSize="22"
-                       Margin="20"/>
+                       Margin="20" FontFamily="Script MT Bold"><Run Language="pt-br" Text="Saint Coffe"/></TextBlock>
             <Button Content="Home" Height="40"
-                    Margin="10" Click="BtnHome_Click">
+                    Margin="10" Click="BtnHome_Click" FontFamily="Script MT Bold">
             </Button>
 
             <Button Content="Cadastro Produto" Height="40"
-                    Margin="10" Click="BtnCadastroProduto_Click" Width="200">
-                
+                    Margin="10" Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold">
+
             </Button>
-                    
-                
+
+
 
         </StackPanel>
         <!--CONTEUDO-->
         <Frame x:Name="MainFrame" Grid.Column="1"
                NavigationUIVisibility="Hidden"/>
+        <Image Margin="31,30,31,0" Source="/ChatGPT Image 29 de mai. de 2026, 19_30_23.png" Stretch="Fill" Grid.Column="1" Opacity="0.6"/>
     </Grid>
 </Window>
             

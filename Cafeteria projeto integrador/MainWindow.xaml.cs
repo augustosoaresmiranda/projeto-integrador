@@ -17,10 +17,12 @@ namespace Cafeteria_projeto_integrador
     public partial class MainWindow : Window
     {
         public MainWindow()
+
         {
             InitializeComponent();
             ConectBd banco = new ConectBd();
-            banco.Conectar();
+            ConectBd.AbrirConexao("server=localhost;user=root;password=123456789;database=Loja");
+            MainFrame.Navigate(new Cadastro());
 
             MainFrame.Navigate(new Cadastro());
         }

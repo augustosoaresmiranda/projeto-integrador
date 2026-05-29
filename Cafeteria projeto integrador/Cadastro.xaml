@@ -8,12 +8,12 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Cadastro">
 
-    <Grid Background="#FFDB9C60">
+    <Grid Background="#FF6F4E37">
         <Label Content="Nome" HorizontalAlignment="Left" Margin="250,88,0,0" VerticalAlignment="Top" Background="#FFFFFBFB"/>
         <Label Content="Senha" HorizontalAlignment="Left" Margin="250,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.119,0.446" Background="White"/>
-        <TextBox x:Name="txbnome" HorizontalAlignment="Center" Margin="0,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txbnome_TextChanged"/>
-        <PasswordBox x:Name="txbsenha" HorizontalAlignment="Center" Margin="0,164,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="txbbuton" Content="Cadastrar" HorizontalAlignment="Center" Margin="0,277,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.135,0.589"/>
+        <TextBox x:Name="txbUser"   HorizontalAlignment="Center" Margin="0,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txbSenha" HorizontalAlignment="Center" Margin="0,164,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnCadastro" Content="Cadastrar" HorizontalAlignment="Center" Margin="0,277,0,0" VerticalAlignment="Center" Width="170" Height="50" Grid.Row="1" RenderTransformOrigin="0.135,0.589" Click="BtnCadastrar" Background="#FFC8A96B" Foreground="White" FontSize="20"   Style="{StaticResource RoundedButtonStyle}" BorderBrush="#FF6F4E37"/>
 
     </Grid>
 </Page>

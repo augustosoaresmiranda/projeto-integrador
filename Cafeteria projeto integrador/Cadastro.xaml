@@ -9,17 +9,17 @@
       Title="Cadastro">
 
     <Canvas Background="#FF6F4E37">
-        <Image Margin="0,-43,0,-43" Source="/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" Stretch="Fill" HorizontalAlignment="Center" Opacity="0.2" Width="715"/>
+        <Image Source="/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" Stretch="Fill" HorizontalAlignment="Left" Opacity="0.2" Width="716" Canvas.Left="42" Canvas.Top="-93"/>
 
-        <Label Content="Nome" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFFFFBFB" Canvas.Left="250" Canvas.Top="88">
+        <Label Content="Nome" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFFFFBFB" Canvas.Left="271" Canvas.Top="122" RenderTransformOrigin="0.602,0.788">
             <Label.BorderBrush>
                 <ImageBrush/>
             </Label.BorderBrush>
         </Label>
-        <Label Content="Senha" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.119,0.446" Background="White" Canvas.Left="250" Canvas.Top="168"/>
-        <TextBox x:Name="txbnome" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Canvas.Left="320" Canvas.Top="92" />
-        <PasswordBox x:Name="txbsenha" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Canvas.Left="320" Canvas.Top="168"/>
-        <Button Content="Cadastrar" HorizontalAlignment="Center" Margin="0,277,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.135,0.589"/>
+        <Label Content="Senha" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.119,0.446" Background="White" Canvas.Left="271" Canvas.Top="173"/>
+        <TextBox x:Name="txbnome" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Canvas.Left="340" Canvas.Top="126" RenderTransformOrigin="0.491,1.818" />
+        <PasswordBox x:Name="txbsenha" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Canvas.Left="340" Canvas.Top="177"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.135,0.589" Canvas.Left="373" Canvas.Top="250"/>
 
 
     </Canvas>

@@ -36,11 +36,11 @@
         <Frame x:Name="MainFrame" Grid.Column="1"
                NavigationUIVisibility="Hidden"/>
         <Image Margin="31,30,31,0" Source="/ChatGPT Image 29 de mai. de 2026, 19_30_23.png" Stretch="Fill" Grid.Column="1" Opacity="0.6"/>
-        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="21,25,0,0" VerticalAlignment="Top" Height="66" Width=>
+        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="21,25,0,0" VerticalAlignment="Top" Height="66" >
             <Button.Background>
                 <ImageBrush ImageSource="/Image8.png"/>
             </Button.Background>
-        </Button> 2"/>
+        </Button> 
         <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="134,25,0,0" VerticalAlignment="Top" Height="66" Width="92">
             <Button.Background>
                 <ImageBrush ImageSource="/black coffe.png"/>

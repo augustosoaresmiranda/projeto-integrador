@@ -22,8 +22,8 @@ namespace Cafeteria_projeto_integrador
         public Login()
         {
             InitializeComponent();
-            string nome = txbUser.Text;
-            string senha = txbPassword.Password;
+            string nome = txb1.Text;
+            string senha = txbsenha1.Password;
         }
 
         private void BtnLogar(object sender, RoutedEventArgs e)
@@ -31,8 +31,8 @@ namespace Cafeteria_projeto_integrador
             string sql = "SELECT Nome, Senha FROM Usuario WHERE Nome = @nome AND Senha= @senha";
 
             MySqlCommand comando = new MySqlCommand(sql, ConectBd.Conexao);
-            comando.Parameters.AddWithValue("@nome", txbUser.Text);
-            comando.Parameters.AddWithValue("@senha", txbPassword.Password);
+            comando.Parameters.AddWithValue("@nome", txb1.Text);
+            comando.Parameters.AddWithValue("@senha", txbsenha1.Password);
 
             using (MySqlDataReader leitor = comando.ExecuteReader())
             {

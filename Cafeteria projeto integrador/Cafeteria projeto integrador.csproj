@@ -10,7 +10,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="84a84dfd-14ed-4b15-8eed-ccb779057e33.png" />
+    <None Remove="belga.png" />
+    <None Remove="black coffe.png" />
+    <None Remove="Image8.png" />
+    <None Remove="moca branco.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="84a84dfd-14ed-4b15-8eed-ccb779057e33.png" />
+    <Resource Include="belga.png" />
+    <Resource Include="black coffe.png" />
+    <Resource Include="Image8.png" />
+    <Resource Include="moca branco.png" />
   </ItemGroup>
 
 </Project>

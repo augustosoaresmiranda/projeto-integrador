@@ -22,10 +22,12 @@
                     Margin="10" Click="BtnHome_Click" FontFamily="Script MT Bold">
             </Button>
 
-            <Button Content="Cadastro Produto" Height="40"
+            <Button Content="Cadastrar ou editar Produtos" Height="40"
                     Margin="10" Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold">
 
             </Button>
+            <Button Content="Produtos" Height="40"
+                Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold"/>
 
 
 

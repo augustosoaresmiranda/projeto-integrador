@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,51 +21,79 @@ namespace Cafeteria_projeto_integrador
     /// </summary>
     public partial class Cadastro : Page
     {
-
-
         public Cadastro()
         {
             InitializeComponent();
-
-            string nome = txbnome.Text;
-            string senha = txbsenha.Password;
-
-
         }
 
-
-        private void BtnCadastrar(object sender, RoutedEventArgs e)
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            try
+            string email = txtEmail.Text.Trim();
+            string senha = txtSenha.Password;
+
+            // Validação de campos vazios
+            if (string.IsNullOrWhiteSpace(email))
             {
-                string sql = @"INSERT INTO usuario (Nome, Senha) VALUES (@nome, @senha)";
+                MessageBox.Show("Digite seu e-mail.",
+                    "Aviso",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
 
-                using (MySqlCommand cmd = new MySqlCommand(sql, ConectBd.Conexao))
-                {
-                    cmd.Parameters.AddWithValue("@nome", txbnome.Text);
-                    cmd.Parameters.AddWithValue("@senha", txbsenha.Password);
-
-                    cmd.ExecuteNonQuery();
-                }
-
-                MessageBox.Show("Usuário cadastrado com sucesso!");
-
-                txbnome.Clear();
-                txbsenha.Clear();
-
-                NavigationService.Navigate(new Login());
+                txtEmail.Focus();
+                return;
             }
-            catch (MySqlException ex)
+
+            if (string.IsNullOrWhiteSpace(senha))
             {
-                if (ex.Number == 1062)
-                {
-                    MessageBox.Show("Este usuário já existe.");
-                }
-                else
-                {
-                    MessageBox.Show($"Erro: {ex.Message}");
-                }
+                MessageBox.Show("Digite sua senha.",
+                    "Aviso",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+
+                txtSenha.Focus();
+                return;
             }
+
+            // Verifica se o e-mail é válido
+            if (!EmailValido(email))
+            {
+                MessageBox.Show("Digite um e-mail válido.",
+                    "Erro",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+
+                txtEmail.Focus();
+                return;
+            }
+
+            // Login de exemplo
+            if (email == "admin@saintcoffee.com" && senha == "123456")
+            {
+                MessageBox.Show("Login realizado com sucesso!",
+                    "Bem-vindo",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information);
+
+                // Abre a tela inicial
+                MainWindow janela = new MainWindow();
+                janela.Show();
+
+                // Fecha a janela
+                Window.GetWindow(this).Close();
+            }
+            else
+            {
+                MessageBox.Show("E-mail ou senha incorretos.",
+                    "Erro",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+        }
+
+        private bool EmailValido(string email)
+        {
+            string padrao = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, padrao);
         }
     }
 }

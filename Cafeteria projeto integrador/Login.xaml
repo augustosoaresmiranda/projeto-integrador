@@ -1,4 +1,4 @@
-﻿<Page x:Class="Cafeteria_projeto_integrador.Login"
+﻿<Page x:Class="Cafeteria_projeto_integrador.Cadastro"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,17 +6,58 @@
       xmlns:local="clr-namespace:Cafeteria_projeto_integrador"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Login">
+      Title="Cadastro">
 
-    <Grid Background="#FF6F4E37">
-        <Image Margin="0,-43,0,-43" Source="/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" Stretch="Fill" HorizontalAlignment="Center" Opacity="0.2"/>
+    <Canvas Background="#FF6F4E37">
+        <Border
+                CornerRadius="20"
+                Background="White" Height="376" Canvas.Left="32" Canvas.Top="37" Width="268">
+            <StackPanel Margin="35">
+                <TextBlock Text="Saint Coffe"
+           FontSize="28"
+           FontWeight="Bold"
+           Foreground="#8B5A2B"
+           HorizontalAlignment="Center"/>
 
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="250,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.088,0.321" Foreground="#FFF3F3F3"/>
-        <Label Content="Senha" HorizontalAlignment="Left" Margin="250,160,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <TextBox x:Name="txb1" HorizontalAlignment="Center" Margin="0,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <PasswordBox x:Name="txbsenha1" HorizontalAlignment="Center" Margin="0,168,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Entrar" HorizontalAlignment="Center" Margin="0,277,0,0" VerticalAlignment="Top" Width="60"/>
+               
+
+                
+
+                <TextBlock Text="E-mail"
+                           FontWeight="Bold"
+                           Margin="0,15,0,5"/>
+
+                <TextBox Height="35"
+                         FontSize="15"
+                         x:Name="txtEmail"/>
+
+                <TextBlock Text="Senha"
+                           FontWeight="Bold"
+                           Margin="0,15,0,5"/>
+
+                <PasswordBox Height="35"
+                             x:Name="txtSenha"/>
+
+                <Button Name="btnLogin"
+                        Content="Logar"
+                        Width="100"
+                        Height="25"
+                        FontWeight="Bold"
+                        Background="#6D4C41"
+                        Foreground="White"
+                        BorderBrush="Transparent"
+                        Margin="10" Click="btnLogin_Click"/>
+
+            </StackPanel>
 
 
-    </Grid>
+        </Border>
+        <Image Source = "/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" Stretch="Fill" HorizontalAlignment="Left" Opacity="0.7" Width="644" Canvas.Left="217" Canvas.Top="-86" Height="663"/>
+
+
+
+
+
+    </Canvas>
+
 </Page>

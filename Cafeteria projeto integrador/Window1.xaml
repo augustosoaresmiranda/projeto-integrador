@@ -22,35 +22,120 @@
                     Margin="10" Click="BtnHome_Click" FontFamily="Script MT Bold">
             </Button>
 
-            <Button Content="Cadastrar ou editar Produtos" Height="40"
-                    Margin="10" Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold" BorderBrush="#FFDB9C60">
+            <Button Content="Bebidas" Height="40"
+                    Margin="10" Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold" BorderBrush="White">
 
             </Button>
-            <Button Content="Produtos" Height="40"
-                Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold"/>
+            <Button Content="Salgados" Height="40"
+                Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold" BorderBrush="#FFDB9C60" Foreground="#FFDB9C60"/>
 
 
 
         </StackPanel>
         <!--CONTEUDO-->
         <Frame x:Name="MainFrame" Grid.Column="1"
-               NavigationUIVisibility="Hidden"/>
-        <Image Margin="31,30,31,0" Source="/ChatGPT Image 29 de mai. de 2026, 19_30_23.png" Stretch="Fill" Grid.Column="1" Opacity="0.6"/>
-        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="21,25,0,0" VerticalAlignment="Top" Height="66" >
+               NavigationUIVisibility="Hidden" Background="Black"/>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="140" Margin="10,77,0,0" VerticalAlignment="Top" Width="128" Fill="#FF969696">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="140" Margin="143,77,0,0" VerticalAlignment="Top" Width="128" Fill="#FF969696">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="140" Margin="276,77,0,0" VerticalAlignment="Top" Width="128" Fill="#FF969696">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="140" Margin="409,77,0,0" VerticalAlignment="Top" Width="128" Fill="#FF969696">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="140" Margin="10,255,0,0" VerticalAlignment="Top" Width="128" Fill="#FF969696">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="140" Margin="143,255,0,0" VerticalAlignment="Top" Width="128" Fill="#FF969696">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="140" Margin="276,255,0,0" VerticalAlignment="Top" Width="128" Fill="#FF969696">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="140" Margin="409,255,0,0" VerticalAlignment="Top" Width="128" Fill="#FF969696">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Button Content="" HorizontalAlignment="Left" Margin="26,85,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1">
             <Button.Background>
-                <ImageBrush ImageSource="/Image8.png"/>
-            </Button.Background>
-        </Button> 
-        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="134,25,0,0" VerticalAlignment="Top" Height="66" Width="92">
-            <Button.Background>
-                <ImageBrush ImageSource="/black coffe.png"/>
+                <ImageBrush ImageSource="/Croasaint.png"/>
             </Button.Background>
         </Button>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Height="66" Width="92"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="355,25,0,0" VerticalAlignment="Top" Height="66" Width="92"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="457,25,0,0" VerticalAlignment="Top" Height="66" Width="92"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="21,121,0,0" VerticalAlignment="Top" Height="66" Width="92"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="134,121,0,0" VerticalAlignment="Top" Height="66" Width="92"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="159,85,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/pãp de cueijo.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="292,85,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/torrada.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="425,84,0,0" VerticalAlignment="Top" Height="76" Width="96" Grid.Column="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="26,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="159,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="292,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="425,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1"/>
+        <Label Grid.Column="1" Content="Salgados" HorizontalAlignment="Left" Margin="186,-1,0,0" VerticalAlignment="Top" Width="154" FontWeight="Bold" Foreground="#FFFBFBFB" FontFamily="Script MT Bold" FontSize="36"/>
+        <Label Grid.Column="1" Content="Croissant de Presunto" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="Pão de quijo" HorizontalAlignment="Left" Margin="172,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="Torrada" HorizontalAlignment="Left" Margin="305,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="14,90 R$" HorizontalAlignment="Left" Margin="45,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="10,90 R$" HorizontalAlignment="Left" Margin="178,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="15,90 R$" HorizontalAlignment="Left" Margin="311,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="9,90 R$" HorizontalAlignment="Left" Margin="444,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="16,90 R$" HorizontalAlignment="Left" Margin="45,368,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="18,90 R$" HorizontalAlignment="Left" Margin="444,368,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="12,90 R$" HorizontalAlignment="Left" Margin="311,368,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="9,90 R$" HorizontalAlignment="Left" Margin="178,368,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="Quiche de Lorraine" HorizontalAlignment="Left" Margin="17,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="Empada de Frango" HorizontalAlignment="Left" Margin="148,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="Folhado de Calabres" HorizontalAlignment="Left" Margin="276,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="Esfiha de Carne" HorizontalAlignment="Left" Margin="424,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Label Grid.Column="1" Content="Wrap de Frango" HorizontalAlignment="Left" Margin="417,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
     </Grid>
 </Window>
             

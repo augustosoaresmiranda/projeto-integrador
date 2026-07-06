@@ -21,5 +21,15 @@ namespace Cafeteria_projeto_integrador
         {
             InitializeComponent();
         }
+
+        private void BtnHome_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnCadastroProduto_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

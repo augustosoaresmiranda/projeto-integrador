@@ -26,10 +26,18 @@ namespace Cafeteria_projeto_integrador
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
+       
+
+        private bool EmailValido(string email)
         {
-            string email = txtEmail.Text.Trim();
-            string senha = txtSenha.Password;
+            string padrao = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, padrao);
+        }
+
+        private void btnCadastrar_Click(object sender, RoutedEventArgs e)
+        {
+            string email = txbEmail.Text.Trim();
+            string senha = txbSenha.Password;
 
             // Validação de campos vazios
             if (string.IsNullOrWhiteSpace(email))
@@ -39,7 +47,7 @@ namespace Cafeteria_projeto_integrador
                     MessageBoxButton.OK,
                     MessageBoxImage.Warning);
 
-                txtEmail.Focus();
+                txbEmail.Focus();
                 return;
             }
 
@@ -50,7 +58,7 @@ namespace Cafeteria_projeto_integrador
                     MessageBoxButton.OK,
                     MessageBoxImage.Warning);
 
-                txtSenha.Focus();
+                txbSenha.Focus();
                 return;
             }
 
@@ -62,7 +70,7 @@ namespace Cafeteria_projeto_integrador
                     MessageBoxButton.OK,
                     MessageBoxImage.Error);
 
-                txtEmail.Focus();
+                txbEmail.Focus();
                 return;
             }
 
@@ -88,12 +96,6 @@ namespace Cafeteria_projeto_integrador
                     MessageBoxButton.OK,
                     MessageBoxImage.Error);
             }
-        }
-
-        private bool EmailValido(string email)
-        {
-            string padrao = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-            return Regex.IsMatch(email, padrao);
         }
     }
 }

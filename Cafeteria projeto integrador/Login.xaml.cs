@@ -18,9 +18,9 @@ namespace Cafeteria_projeto_integrador
     /// <summary>
     /// Interação lógica para Login.xam
     /// </summary>
-    public partial class Cadastro : Page
+    public partial class Login : Page
     {
-        public Cadastro()
+        public Login()
         {
             InitializeComponent();
         }

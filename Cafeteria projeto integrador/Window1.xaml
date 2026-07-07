@@ -114,11 +114,31 @@
                 <ImageBrush ImageSource="/torrada.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="425,84,0,0" VerticalAlignment="Top" Height="76" Width="96" Grid.Column="1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="26,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="159,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="292,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="425,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="425,84,0,0" VerticalAlignment="Top" Height="76" Width="96" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/carne.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="26,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/quiche de lorrane.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="159,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/flango.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="292,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/brebresa.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="425,266,0,0" VerticalAlignment="Top" Height="75" Width="96" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/frnagola.png"/>
+            </Button.Background>
+        </Button>
         <Label Grid.Column="1" Content="Salgados" HorizontalAlignment="Left" Margin="186,-1,0,0" VerticalAlignment="Top" Width="154" FontWeight="Bold" Foreground="#FFFBFBFB" FontFamily="Script MT Bold" FontSize="36"/>
         <Label Grid.Column="1" Content="Croissant de Presunto" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
         <Label Grid.Column="1" Content="Pão de quijo" HorizontalAlignment="Left" Margin="172,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>

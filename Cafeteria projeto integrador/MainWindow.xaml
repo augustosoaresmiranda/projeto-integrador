@@ -18,16 +18,8 @@
                        Foreground="White"
                        FontSize="22"
                        Margin="20" FontFamily="Script MT Bold"><Run Language="pt-br" Text="Saint Coffe"/></TextBlock>
-            <Button Content="Home" Height="40"
-                    Margin="10" Click="BtnHome_Click" FontFamily="Script MT Bold">
-            </Button>
-
-            <Button Content="Cadastrar ou editar Produtos" Height="40"
-                    Margin="10" Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold">
-
-            </Button>
             <Button Content="Produtos" Height="40"
-                Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold"/>
+                Click="BtnProduto_Click" Width="200" FontFamily="Script MT Bold"/>
 
 
 

@@ -75,7 +75,7 @@ namespace Cafeteria_projeto_integrador
             }
 
             // Login de exemplo
-            if (email == "admin@saintcoffee.com" && senha == "123456")
+            if (email == "admin@saintcoffee.com" && senha == "1234")
             {
                 MessageBox.Show("Login realizado com sucesso!",
                     "Bem-vindo",

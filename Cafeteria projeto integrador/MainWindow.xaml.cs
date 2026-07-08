@@ -29,12 +29,15 @@ namespace Cafeteria_projeto_integrador
 
         private void BtnHome_Click(object sender, RoutedEventArgs e)
         {
-
+           
         }
 
-        private void BtnCadastroProduto_Click(object sender, RoutedEventArgs e)
+        private void BtnProduto_Click(object sender, RoutedEventArgs e)
         {
+            Window2 janela = new Window2();
+            janela.Show();
 
+            this.Close();
         }
     }
 }

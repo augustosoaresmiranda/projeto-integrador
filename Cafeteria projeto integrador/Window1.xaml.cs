@@ -24,7 +24,10 @@ namespace Cafeteria_projeto_integrador
 
         private void BtnHome_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow janela = new MainWindow();
+            janela.Show();
 
+            this.Close();
         }
 
         private void BtnCadastroProduto_Click(object sender, RoutedEventArgs e)

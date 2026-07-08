@@ -1,0 +1,21 @@
+﻿<Page x:Class="Cafeteria_projeto_integrador.CarrinhoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Background="#FFF5E6D3">
+        <TextBlock Text="Carrinho"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,20,0,0"/>
+
+        <ListBox Margin="20,80,20,100"/>
+
+        <Button Content="Finalizar Compra"
+                Width="180"
+                Height="40"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Margin="0,0,0,20"/>
+    </Grid>
+</Page>

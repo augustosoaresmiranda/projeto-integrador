@@ -23,9 +23,9 @@
             </Button>
 
             <Button Content="Bebidas" Height="40"
-                    Margin="10" Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold" BorderBrush="#FFDB9C60" Foreground="#FFDB9C60"/>
+                    Margin="10" Click="BtnSalgados_Click" Width="200" FontFamily="Script MT Bold" BorderBrush="#FFDB9C60" Foreground="#FFDB9C60"/>
             <Button Content="Salgados" Height="40"
-                Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold"/>
+                Click="BtnSalgados_Click" Width="200" FontFamily="Script MT Bold"/>
 
 
 
@@ -154,6 +154,7 @@
         <Label Grid.Column="1" Content="19,90 R$" HorizontalAlignment="Left" Margin="181,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
         <Label Grid.Column="1" Content="16,90 R$" HorizontalAlignment="Left" Margin="316,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
         <Label Grid.Column="1" Content="18,90 R$" HorizontalAlignment="Left" Margin="449,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
+        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="515,24,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
             

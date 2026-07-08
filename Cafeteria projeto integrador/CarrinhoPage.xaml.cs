@@ -8,31 +8,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Cafeteria_projeto_integrador
 {
     /// <summary>
-    /// Lógica interna para Window1.xaml
+    /// Interação lógica para CarrinhoPage.xam
     /// </summary>
-    public partial class Window1 : Window
+    public partial class CarrinhoPage : Page
     {
-        public Window1()
+        public CarrinhoPage()
         {
             InitializeComponent();
-        }
-
-        private void BtnHome_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow janela = new MainWindow();
-            janela.Show();
-
-            this.Close();
-        }
-
-        private void BtnCadastroProduto_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

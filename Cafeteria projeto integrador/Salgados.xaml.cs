@@ -13,29 +13,29 @@ using System.Windows.Shapes;
 namespace Cafeteria_projeto_integrador
 {
     /// <summary>
-    /// Lógica interna para Window2.xaml
+    /// Lógica interna para Window1.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Salgados : Page
     {
-        public Window2()
+        public Salgados()
         {
             InitializeComponent();
         }
 
-        private void BtnHome_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow janela = new MainWindow();
-            janela.Show();
-
-            this.Close();
-        }
+       
 
         private void BtnSalgados_Click(object sender, RoutedEventArgs e)
         {
-            Window1 janela = new Window1();
-            janela.Show();
 
-            this.Close();
+        }
+        private void Carrinho_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new CarrinhoPage());
+        }
+
+        private void BtnBebidas_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Bebidas());
         }
     }
 }

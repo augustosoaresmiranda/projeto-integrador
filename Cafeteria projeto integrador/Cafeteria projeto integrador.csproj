@@ -18,6 +18,7 @@
     <None Remove="caramelllllllll.png" />
     <None Remove="carne.png" />
     <None Remove="cb6cc8de-509c-4aaf-ba23-365398041018.png" />
+    <None Remove="ChatGPT Image 27 de mai. de 2026, 21_09_46.png" />
     <None Remove="Croasaint.png" />
     <None Remove="f9ddd4db-2e56-446c-bac4-5ba7e1c57085.png" />
     <None Remove="flango.png" />
@@ -26,6 +27,7 @@
     <None Remove="Image8.png" />
     <None Remove="moca branco.png" />
     <None Remove="pãp de cueijo.png" />
+    <None Remove="quiche de lorrane.png" />
     <None Remove="torrada.png" />
   </ItemGroup>
 
@@ -42,6 +44,7 @@
     <Resource Include="caramelllllllll.png" />
     <Resource Include="carne.png" />
     <Resource Include="cb6cc8de-509c-4aaf-ba23-365398041018.png" />
+    <Resource Include="ChatGPT Image 27 de mai. de 2026, 21_09_46.png" />
     <Resource Include="Croasaint.png" />
     <Resource Include="f9ddd4db-2e56-446c-bac4-5ba7e1c57085.png" />
     <Resource Include="flango.png" />
@@ -50,6 +53,7 @@
     <Resource Include="Image8.png" />
     <Resource Include="moca branco.png" />
     <Resource Include="pãp de cueijo.png" />
+    <Resource Include="quiche de lorrane.png" />
     <Resource Include="torrada.png" />
   </ItemGroup>
 

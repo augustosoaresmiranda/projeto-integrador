@@ -7,9 +7,10 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Cadastro">
-
-    <Canvas Background="#FF6F4E37">
-        <Border
+    <Viewbox>
+        
+    <Canvas Background="#FF6F4E37" Width="800" Height="450">
+        <Border 
                 CornerRadius="20"
                 Background="White" Height="376" Canvas.Left="32" Canvas.Top="37" Width="268">
             <StackPanel Margin="35">
@@ -56,12 +57,13 @@
 
 
         </Border>
-        <Image Source = "/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" Stretch="Fill" HorizontalAlignment="Left" Width="644" Canvas.Left="233" Canvas.Top="-106" Height="662" Opacity="0.7"/>
+        <Image Source = "/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" HorizontalAlignment="Left" Width="644" Canvas.Left="233" Canvas.Top="-106" Height="662" Opacity="0.7" Stretch="Fill"/>
 
 
 
 
 
     </Canvas>
+    </Viewbox>
 
 </Page>

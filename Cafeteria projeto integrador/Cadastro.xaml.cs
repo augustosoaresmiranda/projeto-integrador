@@ -77,17 +77,16 @@ namespace Cafeteria_projeto_integrador
             // Login de exemplo
             if (email == "admin@saintcoffee.com" && senha == "1234")
             {
-                MessageBox.Show("Login realizado com sucesso!",
+                MessageBox.Show("Cadastro realizado com sucesso!",
                     "Bem-vindo",
                     MessageBoxButton.OK,
                     MessageBoxImage.Information);
 
                 // Abre a tela inicial
-                MainWindow janela = new MainWindow();
-                janela.Show();
+                NavigationService.Navigate(new Bebidas());
 
-                // Fecha a janela
-                Window.GetWindow(this).Close();
+                
+               
             }
             else
             {

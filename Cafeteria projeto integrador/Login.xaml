@@ -8,37 +8,38 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Cadastro">
 
-    <Canvas Background="#FF6F4E37">
-        <Border
+    <Viewbox>
+        <Canvas Background="#FF6F4E37" Width="800" Height="450">
+            <Border
                 CornerRadius="20"
                 Background="White" Height="376" Canvas.Left="32" Canvas.Top="37" Width="268">
-            <StackPanel Margin="35">
-                <TextBlock Text="Saint Coffe"
+                <StackPanel Margin="35">
+                    <TextBlock Text="Saint Coffe"
            FontSize="28"
            FontWeight="Bold"
            Foreground="#8B5A2B"
            HorizontalAlignment="Center"/>
 
-               
 
-                
 
-                <TextBlock Text="E-mail"
+
+
+                    <TextBlock Text="E-mail"
                            FontWeight="Bold"
                            Margin="0,15,0,5"/>
 
-                <TextBox Height="35"
+                    <TextBox Height="35"
                          FontSize="15"
                          x:Name="txtEmail"/>
 
-                <TextBlock Text="Senha"
+                    <TextBlock Text="Senha"
                            FontWeight="Bold"
                            Margin="0,15,0,5"/>
 
-                <PasswordBox Height="35"
+                    <PasswordBox Height="35"
                              x:Name="txtSenha"/>
 
-                <Button Name="btnLogin"
+                    <Button Name="btnLogin"
                         Content="Logar"
                         Width="100"
                         Height="25"
@@ -47,17 +48,22 @@
                         Foreground="White"
                         BorderBrush="Transparent"
                         Margin="10" Click="btnLogin_Click"/>
+                    <Button x:Name="btnCadastro"
+                        Content="Não tem uma conta? Cadastre-se aqui"
+                        Width="169"
+                        Height="15"
+                        FontWeight="Bold"
+                        Background="White"
+                        Foreground="Black"
+                        BorderBrush="Transparent"
+                        Click="btnCadastro_Click" FontSize="9"/>
 
-            </StackPanel>
+                </StackPanel>
 
 
-        </Border>
-        <Image Source = "/ChatGPT Image 27 de mai. de 2026, 21_09_46.png" Stretch="Fill" HorizontalAlignment="Left" Opacity="0.7" Width="644" Canvas.Left="217" Canvas.Top="-86" Height="663"/>
-
-
-
-
-
-    </Canvas>
+            </Border>
+            <Image Source = "/ChatGPT Image 27 de mai. de 2026, 21_09_46.png"  Opacity="0.7"  Canvas.Left="305" Height="449" HorizontalAlignment="Left" VerticalAlignment="Top" Width="495" Canvas.Top="1" />
+        </Canvas>
+    </Viewbox>
 
 </Page>

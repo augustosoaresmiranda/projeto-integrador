@@ -6,29 +6,8 @@
         xmlns:local="clr-namespace:Cafeteria_projeto_integrador"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FFDB9C60">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="220"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <!-- MENU-->
-        <StackPanel Background="#FF6A452C">
-
-            <TextBlock
-                       Foreground="White"
-                       FontSize="22"
-                       Margin="20" FontFamily="Script MT Bold"><Run Language="pt-br" Text="Saint Coffe"/></TextBlock>
-            <Button Content="Produtos" Height="40"
-                Click="BtnProduto_Click" Width="200" FontFamily="Script MT Bold"/>
-
-
-
-        </StackPanel>
-        <!--CONTEUDO-->
-        <Frame x:Name="MainFrame" Grid.Column="1"
-               NavigationUIVisibility="Hidden"/>
-        <Image Margin="31,30,31,0" Source="/ChatGPT Image 29 de mai. de 2026, 19_30_23.png" Stretch="Fill" Grid.Column="1" Opacity="0.6"/>
-    </Grid>
+    <Frame x:Name="MainFrame" Grid.Column="1"
+     NavigationUIVisibility="Hidden" Source="Login.xaml" />
 </Window>
             
 

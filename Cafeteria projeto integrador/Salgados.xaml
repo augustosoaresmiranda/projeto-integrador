@@ -1,4 +1,4 @@
-﻿<Window x:Class="Cafeteria_projeto_integrador.Window1"
+﻿<Page x:Class="Cafeteria_projeto_integrador.Salgados"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:Cafeteria_projeto_integrador"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FFDB9C60">
+    <Viewbox>
+        
+    <Grid Background="#FFDB9C60" Width="800" Height="450">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="*"/>
@@ -18,16 +20,14 @@
                        Foreground="White"
                        FontSize="22"
                        Margin="20" FontFamily="Script MT Bold"><Run Language="pt-br" Text="Saint Coffe"/></TextBlock>
-            <Button Content="Home" Height="40"
-                    Margin="10" Click="BtnHome_Click" FontFamily="Script MT Bold">
-            </Button>
+            
 
             <Button Content="Bebidas" Height="40"
-                    Margin="10" Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold" BorderBrush="White">
+                    Margin="10" x:Name="Bebida" Click="BtnBebidas_Click" Width="200" FontFamily="Script MT Bold" BorderBrush="White">
 
             </Button>
             <Button Content="Salgados" Height="40"
-                Click="BtnCadastroProduto_Click" Width="200" FontFamily="Script MT Bold" BorderBrush="#FFDB9C60" Foreground="#FFDB9C60"/>
+                Click="BtnSalgados_Click" Width="200" FontFamily="Script MT Bold" BorderBrush="#FFDB9C60" Foreground="#FFDB9C60"/>
 
 
 
@@ -157,8 +157,10 @@
         <Label Grid.Column="1" Content="Folhado de Calabres" HorizontalAlignment="Left" Margin="276,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
         <Label Grid.Column="1" Content="Esfiha de Carne" HorizontalAlignment="Left" Margin="424,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
         <Label Grid.Column="1" Content="Wrap de Frango" HorizontalAlignment="Left" Margin="417,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
-    </Grid>
-</Window>
+            <Button x:Name="Carrinho" Grid.Column="1" Content="🛒" HorizontalAlignment="Left" Margin="537,58,0,0" VerticalAlignment="Top" Click="Carrinho_Click"/>
+        </Grid>
+    </Viewbox>
+</Page>
             
 
 

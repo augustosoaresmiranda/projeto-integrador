@@ -22,22 +22,9 @@ namespace Cafeteria_projeto_integrador
             InitializeComponent();
             ConectBd banco = new ConectBd();
             ConectBd.AbrirConexao("server=localhost;user=root;password=123456789;database=Loja");
-            MainFrame.Navigate(new Cadastro());
-
-            MainFrame.Navigate(new Cadastro());
         }
 
-        private void BtnHome_Click(object sender, RoutedEventArgs e)
-        {
-           
-        }
 
-        private void BtnProduto_Click(object sender, RoutedEventArgs e)
-        {
-            Window2 janela = new Window2();
-            janela.Show();
-
-            this.Close();
-        }
+      
     }
 }

@@ -8,29 +8,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Cafeteria_projeto_integrador
 {
     /// <summary>
-    /// Lógica interna para Window1.xaml
+    /// Interação lógica para Home.xam
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Home : Page
     {
-        public Window1()
+        public Home()
         {
             InitializeComponent();
         }
 
-        private void BtnHome_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow janela = new MainWindow();
-            janela.Show();
-
-            this.Close();
-        }
-
-        private void BtnCadastroProduto_Click(object sender, RoutedEventArgs e)
+        private void BtnProduto_Click(object sender, RoutedEventArgs e)
         {
 
         }

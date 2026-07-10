@@ -57,7 +57,7 @@ namespace Cafeteria_projeto_integrador
             }
 
             // Login de exemplo
-            if (email == "admin@saintcoffee.com" && senha == "123456")
+            if (email == "admin@saintcoffee.com" && senha == "1234")
             {
                 MessageBox.Show("Login realizado com sucesso!",
                     "Sucesso",
@@ -65,11 +65,10 @@ namespace Cafeteria_projeto_integrador
                     MessageBoxImage.Information);
 
                 // Abre a tela inicial
-                MainWindow janela = new MainWindow();
-                janela.Show();
+                NavigationService.Navigate(new Bebidas());
 
                 // Fecha a janela do login
-                Window.GetWindow(this).Close();
+                
             }
             else
             {
@@ -87,6 +86,11 @@ namespace Cafeteria_projeto_integrador
         {
             string padrao = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
             return Regex.IsMatch(email, padrao);
+        }
+
+        private void btnCadastro_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Cadastro());
         }
     }
 }

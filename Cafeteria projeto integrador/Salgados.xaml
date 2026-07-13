@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cafeteria_projeto_integrador"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" d:DesignHeight="450" d:DesignWidth="800">
     <Viewbox>
         
     <Grid Background="#FFDB9C60" Width="800" Height="450">
@@ -157,7 +157,7 @@
         <Label Grid.Column="1" Content="Folhado de Calabres" HorizontalAlignment="Left" Margin="276,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
         <Label Grid.Column="1" Content="Esfiha de Carne" HorizontalAlignment="Left" Margin="424,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
         <Label Grid.Column="1" Content="Wrap de Frango" HorizontalAlignment="Left" Margin="417,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.11" FontWeight="Bold" FontFamily="Script MT Bold" FontSize="14"/>
-            <Button x:Name="Carrinho" Grid.Column="1" Content="🛒" HorizontalAlignment="Left" Margin="537,58,0,0" VerticalAlignment="Top" Click="Carrinho_Click"/>
+            <Button x:Name="Carrinho" Grid.Column="1" Content="🛒" HorizontalAlignment="Left" Margin="537,52,0,0" VerticalAlignment="Top" Click="Carrinho_Click"/>
         </Grid>
     </Viewbox>
 </Page>

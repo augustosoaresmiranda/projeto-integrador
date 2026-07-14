@@ -22,5 +22,10 @@ namespace Cafeteria_projeto_integrador
         {
             InitializeComponent();
         }
+
+        private void backbtn(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Salgados());
+        }
     }
 }

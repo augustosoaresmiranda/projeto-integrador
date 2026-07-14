@@ -34,5 +34,10 @@ namespace Cafeteria_projeto_integrador
         {
             NavigationService.Navigate(new CarrinhoPage());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

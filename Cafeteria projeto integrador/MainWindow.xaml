@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Frame x:Name="MainFrame" Grid.Column="1"
-     NavigationUIVisibility="Hidden" Source="Salgados.xaml" />
+     NavigationUIVisibility="Hidden" Source="Login.xaml" />
 </Window>
             
 

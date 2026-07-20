@@ -93,7 +93,7 @@ namespace Cafeteria_projeto_integrador
                 MessageBox.Show("E-mail ou senha incorretos.",
                     "Erro",
                     MessageBoxButton.OK,
-                    MessageBoxImage.Error);uh90hi9hi8g
+                    MessageBoxImage.Error);
             }
         }
     }

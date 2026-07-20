@@ -37,5 +37,10 @@ namespace Cafeteria_projeto_integrador
         {
             NavigationService.Navigate(new Bebidas());
         }
+
+        private void crospresunt_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
